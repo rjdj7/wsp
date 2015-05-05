@@ -1,0 +1,217 @@
+
+/*-------------------------------------------  general -------------------------------------------------------*/
+body{
+	font-size: 55%;
+	font-family: Century Schoolbook;
+	color:#545257; /*changes color of the whole text*/
+	margin-top: 0;
+	background-color: #FFF3E4;
+}
+#wrapper{
+	width:960px;
+	margin: 0 auto;
+	padding-left: 1%;
+	padding-right: 1%;
+	box-shadow: 5px 5px 15px gray;
+	background-color: white;
+
+}
+/*-------------------------------------------  header -------------------------------------------------------*/
+
+header{
+	border-bottom: 1px solid #bbb8bf; /*changes color of border under project name*/
+}
+h1{
+	margin-top: 0;
+	padding-top: 10px;
+	color: #823D1C;
+}
+h2{
+	margin-top: 20px;
+	text-align: center;
+	color: #823D1C;
+}
+/*-------------------------------------------  table -------------------------------------------------------*/
+table{
+	background: #FFFFEA;  /*changes color of the background of the table*/
+	border-collapse: collapse;
+	width: 100%;
+}
+tr{
+	display: table-row;
+	border-color: inherit;
+}
+.odd{
+	background: #FFF3E4; /*changes color of the stripes table*/
+}
+th{
+	text-align: left;
+	padding: 1em 1em .5em;
+	font-weight: bold;
+	font-size: 120%;
+	color: #545257;  /*changes color of table hd text*/
+	background: #bbbcc0; /*changes color of table hd background*/
+}
+th:first-child{
+	/*border-right: 1px solid #6a7680;*/
+}
+td{
+	padding: 1em 1em;
+	width: 69%;
+}
+td:first-child{
+	/*border-right: 1px solid #6a7680;*/
+}
+/*-------------------------------------------  top section-------------------------------------------------------*/
+.main{
+
+	overflow: auto;
+	/*border-bottom: 1px solid #bbb8bf;*/
+}
+.main p{
+	width: 50%;
+	font-size: 1.4em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+}
+.main figure{
+	margin-left: auto;
+	margin-right: auto;
+	width: 30%;
+
+}
+figure img{
+	width: 100%;
+	border: 2px solid black;
+	box-shadow: 2px 2px 5px #888888;
+}
+.sec{
+	clear: both;
+	margin-top: 40px;
+	
+}
+
+figcaption {
+	text-align: center;
+	margin-top: 5px;
+	color: #C2773B;
+}
+
+.textborder {
+	width: 55%;
+}
+
+/*-------------------------------------------  links -------------------------------------------------------*/
+a{
+	text-decoration: none;
+	font-size: 1.3em;
+	color: #475a80;  /*changes color of the links*/
+}
+a:hover{
+	color: #C2773B;
+}
+/*-------------------------------------------  footer-------------------------------------------------------*/
+footer{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	width: 90%;
+	color: #C2773B;
+}
+/* ------------------------------------------- Media Queries -------------------------------------------------------*/
+
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {
+		#wrapper{
+			width:98%;
+		}	
+	}
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+		#wrapper{
+			width:98%;
+
+		}
+		.main figure{
+			width: 35%;
+		}
+		.main figure img{
+			width: 100%;	
+		}
+		.main p{
+			width: 60%;	
+		}
+		td{
+			width: 50%;
+		}
+	}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+		#wrapper{
+			width: 95%;
+	
+		}
+		.main, header, h2{
+			padding-left: 1%;
+			padding-right: 1%;
+		}
+		.main figure{
+			width: 100%;
+			float: right;
+		}
+		.main p{
+			width: 98%;
+		}
+		.main figure img{
+			width: 100%;
+		}
+		td{
+			width: 50%;
+		}
+	}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+		#wrapper{
+			width: 98%;
+			min-width: 480px;
+			max-width: 767px;
+		}
+		.main p{
+			width: 100%;
+		}
+		td{
+
+			width: 50%;
+		}
+	}
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+		#wrapper{
+			width: 96%;
+		}
+		figure {
+			display: none;
+		}
+		figcaption{
+			display: none;
+		}
+		.sec{
+			margin-top: 10px;
+		}
+		tr{
+			height: 44px;
+			line-height: 44px;
+		}
+		td{
+			width: 50%;
+			
+		}
+	}
+
+
