@@ -1,3 +1,209 @@
+/*-------------------------------------------  New CSS -------------------------------------------------------*/
+
+/*-------------------------------------------  Header */
+
+#logo {
+	font-family: Myriad Pro;
+	font-size: 22px;
+	text-align: center;
+}
+
+#logo a {
+	text-decoration: none;
+	color: #000;
+}
+
+#searchicon {
+	position: relative;
+	bottom: 29px;
+	left: 240px;
+}
+
+#notification {
+	position: relative;
+	bottom: 29px;
+	left: 1100px;
+}
+
+#search {
+	position: relative;
+	bottom: 52px;
+	left: 285px;
+}
+
+/*-------------------------------------------  Navigation */
+
+nav li {
+	display: inline;
+	margin-right: 15px;
+}
+
+nav li a {
+	color: #000;
+}
+
+
+
+/*-------------------------------------------  Featured */
+
+#topRow li{
+	display: inline;
+}
+
+#bottomRow li {
+	display: inline;
+}
+
+/*-------------------------------------------  Feed */
+
+.desc img {
+	float: left;
+	margin-right: 10px;
+}
+
+.desc p {
+	position: relative;
+	left: 75px;
+}
+
+.desc {
+	margin: 20px;
+	margin-bottom: 60px;
+}
+
+.tag {
+	text-align: left;
+	font-size: 12px;
+	position: relative;
+	left: 75px;
+	margin: 2px;
+}
+
+.pagination li {
+	display: inline;
+	font-size: 12px;
+	position: relative;
+	left: 55px;
+	letter-spacing: 15px;
+}
+
+.pagination li a {
+	text-decoration: none;
+}
+
+/*-------------------------------------------  Related */
+
+#related {
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#rmain {
+	float: left;
+	width: 33%;
+}
+
+#r1 {
+	float: right;
+	width: 33%;
+	margin-top: 68px;
+}
+
+#r2 {
+	float: right;
+	width: 33%;
+	margin-top: 68px;
+}
+
+
+/*-------------------------------------------  Popular */
+
+#popular {
+	width: 20%;
+	border: solid 1px #000;
+	font-size: 13px;
+}
+
+#popular p {
+	font-size: 10px;
+	position: relative;
+	left: 120px;
+}
+
+#plist li {
+	padding: 5px;
+	border-bottom: solid 1px #000;
+	width: 90%;
+}
+
+.score {
+	position: relative;
+	left: 150px;
+	background-color: #F0F0F5;
+	padding: 5px;
+}
+
+#numberOne {
+	background-color: #4C4C4C;
+	color: #fff;
+}
+
+/*-------------------------------------------  Signup */
+
+#social {
+	float: left;
+	width: 50%;
+}
+
+#rbutton {
+	position: relative;
+	left: 778px;
+	top: 10px;
+}
+
+/*-------------------------------------------  Meet */
+
+.columna {
+	float: left;
+	width: 50%;
+}
+
+.columnb {
+	float: right;
+	width: 50%;
+}
+
+.meetport {
+	float: left;
+	margin-right: 5px;
+}
+
+.position {
+	position: relative;
+	left: 85px;
+}
+
+
+/*-------------------------------------------  Footer */
+
+li {
+	list-style-type: none;
+}
+
+.footerlist {
+	width: 10%;
+	float: left;
+}
+
+.footerlist li {
+	position: relative;
+	right: 38px;
+}
+
+
+
+/*-------------------------------------------  Old CSS -------------------------------------------------------*/
 
 /*-------------------------------------------  general -------------------------------------------------------*/
 body{
@@ -5,21 +211,16 @@ body{
 	font-family: Century Schoolbook;
 	color:#545257; /*changes color of the whole text*/
 	margin-top: 0;
-	background-color: #FFF3E4;
+	background-color: #fff;
 }
-#wrapper{
-	width:960px;
-	margin: 0 auto;
-	padding-left: 1%;
-	padding-right: 1%;
-	box-shadow: 5px 5px 15px gray;
-	background-color: white;
 
-}
 /*-------------------------------------------  header -------------------------------------------------------*/
 
 header{
 	border-bottom: 1px solid #bbb8bf; /*changes color of border under project name*/
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
 }
 h1{
 	margin-top: 0;
@@ -80,6 +281,9 @@ td:first-child{
 
 	overflow: auto;
 	/*border-bottom: 1px solid #bbb8bf;*/
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
 }
 .description {
 	width: 50%;
@@ -127,13 +331,7 @@ p {
 }
 
 /*-------------------------------------------  links -------------------------------------------------------*/
-a{
-	text-decoration: none;
-	font-size: 1.3em;
-	color: #475a80;  /*changes color of the links*/
-}
-a:hover{
-	color: #C2773B;
+
 }
 /*-------------------------------------------  footer-------------------------------------------------------*/
 footer{
@@ -144,98 +342,4 @@ footer{
 	width: 90%;
 	color: #C2773B;
 }
-/* ------------------------------------------- Media Queries -------------------------------------------------------*/
-
-
-	/* Smaller than standard 960 (devices and browsers) */
-	@media only screen and (max-width: 959px) {
-		#wrapper{
-			width:98%;
-		}	
-	}
-	/* Tablet Portrait size to standard 960 (devices and browsers) */
-	@media only screen and (min-width: 768px) and (max-width: 959px) {
-
-		#wrapper{
-			width:98%;
-
-		}
-		.main figure{
-			width: 35%;
-		}
-		.main figure img{
-			width: 100%;	
-		}
-		.main p{
-			width: 60%;	
-		}
-		td{
-			width: 50%;
-		}
-	}
-
-	/* All Mobile Sizes (devices and browser) */
-	@media only screen and (max-width: 767px) {
-		#wrapper{
-			width: 95%;
-	
-		}
-		.main, header, h2{
-			padding-left: 1%;
-			padding-right: 1%;
-		}
-		.main figure{
-			width: 100%;
-			float: right;
-		}
-		.main p{
-			width: 98%;
-		}
-		.main figure img{
-			width: 100%;
-		}
-		td{
-			width: 50%;
-		}
-	}
-
-	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-	@media only screen and (min-width: 480px) and (max-width: 767px) {
-		#wrapper{
-			width: 98%;
-			min-width: 480px;
-			max-width: 767px;
-		}
-		.main p{
-			width: 100%;
-		}
-		td{
-
-			width: 50%;
-		}
-	}
-	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-	@media only screen and (max-width: 479px) {
-		#wrapper{
-			width: 96%;
-		}
-		figure {
-			display: none;
-		}
-		figcaption{
-			display: none;
-		}
-		.sec{
-			margin-top: 10px;
-		}
-		tr{
-			height: 44px;
-			line-height: 44px;
-		}
-		td{
-			width: 50%;
-			
-		}
-	}
-
 
